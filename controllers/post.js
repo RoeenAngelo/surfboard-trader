@@ -22,7 +22,7 @@ module.exports = {
       //Since we have a session each request (req) contains the logged-in users info: req.user
       //console.log(req.user) to see everything
       //Grabbing just the posts of the logged-in user
-      const recipes = await Favorite.find({ user: req.user.id }).populate('post');
+      const posts = await Favorite.find({ user: req.user.id }).populate('post');
 
       console.log(posts)
 
