@@ -80,7 +80,7 @@ module.exports = {
         user: req.user.id,
         post: req.params.id,
       });
-      console.log("Favorite has been added!");
+      console.log("Added to Favorites!");
       res.redirect(`/post/${req.params.id}`);
     } catch (err) {
       console.log(err);
